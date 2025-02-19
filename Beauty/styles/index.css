@@ -1,0 +1,19 @@
+@import "./variables.css";
+html {
+  background-color: whitesmoke;
+  margin-top: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: #fef8f8;
+}
