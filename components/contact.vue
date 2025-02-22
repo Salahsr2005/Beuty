@@ -326,7 +326,7 @@ export default {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .digital-pattern {
-    padding: 40px 20px;
+    padding: 40px 10px;
   }
 
   .header-section {
