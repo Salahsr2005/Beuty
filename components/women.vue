@@ -168,6 +168,7 @@ color: #555555;
   .mentor-grid {
     gap: 24px;
     grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
   }
 
   .mentor-card {

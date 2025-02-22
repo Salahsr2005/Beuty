@@ -8,6 +8,6 @@ import HeroSection from './components/HeroSection.vue';
     <extra />
     <contact />
     <BigPage  />
-    <witnes />
+    
 
 </template>

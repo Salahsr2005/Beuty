@@ -65,15 +65,16 @@
       </div>
     </div>
     <women style="z-index: 1;"/>
+    <witnes />
     
   </div>
 </template>
 
 <style scoped>
 .features-container {
-  padding: 60px 24px;
+  padding: 60px 0px 0px 0px;
   min-height: 100vh;
-  background: linear-gradient(to bottom, transparent 40%, #FFFFFF 40%);
+  background: linear-gradient(to bottom, transparent 10%, #FFFFFF 40%);
   position: relative;
   overflow: hidden;
 }
@@ -161,11 +162,10 @@
 .nested-circle {
   position: absolute;
   top: -100px;
-  right: -150px;
-  width: 300px;
-  height: 300px;
+  right: 100px;
+  width: 389px;
+  height: 386px;
   pointer-events: none;
-  opacity: 0.1;
 }
 
 .dot-pattern {
@@ -258,3 +258,4 @@
   }
 }
 </style>
+

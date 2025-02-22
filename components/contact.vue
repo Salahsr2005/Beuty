@@ -15,9 +15,9 @@
       <div class="main-content">
         <!-- Cards Section -->
         <div class="cards-section">
-          <div class="cards-column">
-            <!-- Top Row -->
-            <div class="card-row top-row">
+          <div class="cards-grid">
+            <!-- Left Column -->
+            <div class="cards-column">
               <div class="feature-card platform-card">
                 <div class="icon-group">
                   <img src="/assets/Image.svg" alt="" class="main-icon" style="width: 75px;margin-right: -45px;">
@@ -30,6 +30,19 @@
                 <p class="feature-title">Beautieslife.id Platform</p>
               </div>
 
+              <div class="feature-card social-card">
+                <div class="icon-group social">
+                  <img src="/assets/Linkedin.svg" alt="" style="transform: translateY(-5px);">
+                  <img src="/assets/Facebook.svg" alt="">
+                  <img src="/assets/Instagram.svg" alt="">
+                  <img src="/assets/Twitter.svg" alt="">
+                </div>
+                <p class="feature-title">Social Media Platform</p>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="cards-column right">
               <div class="feature-card tools-card">
                 <div class="icon-group tools">
                   <img src="/assets/Trello.svg" alt="">
@@ -38,19 +51,6 @@
                   <img src="/assets/Google.svg" alt="">
                 </div>
                 <p class="feature-title">Management Tools</p>
-              </div>
-            </div>
-
-            <!-- Bottom Row -->
-            <div class="card-row bottom-row">
-              <div class="feature-card social-card">
-                <div class="icon-group social">
-                  <img src="/assets/Linkedin.svg" alt="" style="transform: translateY(-5px);">
-                  <img src="/assets/Facebook.svg" alt="" >
-                  <img src="/assets/Instagram.svg" alt="">
-                  <img src="/assets/Twitter.svg" alt=""  >
-                </div>
-                <p class="feature-title">Social Media Platform</p>
               </div>
 
               <div class="feature-card chat-card">
@@ -141,6 +141,10 @@ export default {
   letter-spacing: -1.5px;
 }
 
+.highlight {
+  color: #EE9591;
+}
+
 .subtitle {
   font-size: 16px;
   color: #888;
@@ -160,33 +164,20 @@ export default {
   padding-top: 40px;
 }
 
+.cards-grid {
+  display: flex;
+  gap: 40px;
+}
+
 .cards-column {
   display: flex;
   flex-direction: column;
-  gap: 60px;
-}
-
-.card-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-}
-.tools-card{
-  position: absolute;
-  top: -70px;
-  right: 0;
-}
-.chat-card{
-  position: absolute;
-  top: 200px;
-  right: 0;
-}
-.top-row {
-  margin-top: -30px;
+  flex: 1;
 }
 
-.bottom-row {
-  margin-bottom: -40px;
+.cards-column.right {
+  margin-top: -50px;
 }
 
 .feature-card {
@@ -292,7 +283,7 @@ export default {
 
 .bg-circle {
   position: absolute;
-  bottom:-20px;
+  bottom: -20px;
   left: 0px;
   z-index: 0;
   width: 500px;
@@ -313,22 +304,15 @@ export default {
     grid-template-columns: 1fr;
     gap: 60px;
   }
-  .border-circle{
-    width: 60px;
-    height: 60px;
-  }
-  .cards-column {
-    gap: 40px;
+
+  .cards-grid {
+    flex-direction: row;
   }
 
-  .card-row {
-    gap: 30px;
+  .cards-column.right {
+    margin-top: 0;
   }
-  .chat-card{
-  position: absolute;
-  top: 150px;
-  right: 0;
-}
+
   .feature-card {
     min-height: 180px;
     padding: 25px;
@@ -337,22 +321,14 @@ export default {
   .content-right {
     padding-top: 0;
   }
-
-  .dots-pattern {
-    right: -120px;
-    bottom: -120px;
-  }
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   .digital-pattern {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
-  .border-circle{
-    width: 60px;
-    height: 60px;
-  }
+
   .header-section {
     margin-bottom: 60px;
   }
@@ -366,12 +342,12 @@ export default {
     margin-bottom: 80px;
   }
 
-  .cards-column {
-    gap: 30px;
+  .cards-grid {
+    gap: 20px;
   }
 
-  .card-row {
-    gap: 30px;
+  .cards-column {
+    gap: 20px;
   }
 
   .feature-card {
@@ -388,12 +364,6 @@ export default {
   .shadow-icon {
     width: 60px;
     height: 60px;
-  }
-
-  .bg-circle {
-    width: 400px;
-    left: 0px;
-    bottom: 430px;
   }
 
   .dots-pattern {
@@ -414,8 +384,14 @@ export default {
     font-size: 14px;
     margin-bottom: 20px;
   }
-  .pink-shape{
-    margin-top: 100px;
+
+  .pink-shape {
+    margin-top: 40px;
+  }
+
+  .bg-circle {
+    width: 300px;
+    opacity: 0.5;
   }
 }
 </style>

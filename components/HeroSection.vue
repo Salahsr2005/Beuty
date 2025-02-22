@@ -19,6 +19,7 @@
     <div class="landing-container">
       <!-- Left Content -->
       <div class="content-left">
+        <img src="/assets/point.svg" alt="" style="width: 108px; height: 32px; margin-bottom: 23px;">
         <h1 class="title">
           Pasti berat<br>
           kalo lari sendirian<span class="title-dot">.</span>
@@ -124,9 +125,7 @@
     }
 
     .register-button {
-        background: #F39B95;
         border: none;
-        padding: 12px 24px;
         color: white;
         font-style: normal;
         font-weight: 500;
