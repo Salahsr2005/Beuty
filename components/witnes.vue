@@ -472,6 +472,9 @@
 }
 
 @media (max-width: 768px) {
+  .footer{
+    height:340px;
+  }
   .testimonial-section {
     padding: 30px;
   }
