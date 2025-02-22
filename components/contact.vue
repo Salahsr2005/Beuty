@@ -351,7 +351,6 @@ export default {
   }
 
   .feature-card {
-    min-height: 160px;
     padding: 20px;
   }
 
