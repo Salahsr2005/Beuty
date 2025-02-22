@@ -32,7 +32,7 @@
 
               <div class="feature-card social-card">
                 <div class="icon-group social">
-                  <img src="/assets/Linkedin.svg" alt="" style="transform: translateY(-5px);">
+                  <img src="/assets/LinkedIN.svg" alt="" style="transform: translateY(-5px);">
                   <img src="/assets/Facebook.svg" alt="">
                   <img src="/assets/Instagram.svg" alt="">
                   <img src="/assets/Twitter.svg" alt="">
