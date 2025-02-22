@@ -407,7 +407,6 @@
     
     
     .register-button {
-        position: fixed;
         font-size: 12px;
     }
     }
