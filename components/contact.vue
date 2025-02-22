@@ -347,7 +347,7 @@ export default {
   }
 
   .cards-column {
-    gap: 20px;
+    gap: 10px;
   }
 
   .feature-card {
